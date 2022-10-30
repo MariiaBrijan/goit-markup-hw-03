@@ -183,11 +183,10 @@ p {
 }
 
 .benefits-list {
-    display: flex;
-    margin-right: -30px;   
+    display: flex; 
 }
 
-.benefits-item {
+.benefits-item:not(:last-child) {
     margin-right: 30px;
     flex-basis: calc((100%-90px)/4);
 }
@@ -217,12 +216,11 @@ p {
 
 .tasks-list {
     display: flex;
-    margin-right: -30px;
-}
+    }
 
-.tasks-list-item {
-    margin-right: 30px;
+.tasks-list-item:not(:last-child) {
     flex-basis: calc((100%-60px)/3);
+    margin-right: 30px;
 }
 
 .second-title {
